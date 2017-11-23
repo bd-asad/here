@@ -1,3 +1,1 @@
-cd asad.github.io
-
-echo "Hello World" > index.html
+trying to make a portfolio website.
