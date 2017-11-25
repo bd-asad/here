@@ -1,0 +1,193 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Green Firm (Demo Website)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/slicknav.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+<!--====For Portfolio View====-->
+        <script src="js/jquery.js"></script>
+        <link rel="stylesheet" href="../p2/css/template-style.css">
+
+        
+<script type="text/javascript">//<![CDATA[ 
+   $(function() {
+    
+ $('.web').click(function(e){
+     e.preventDefault();
+   //$("#bg").attr('src',"template_preview/images/2x2.gif");
+    $("#device").attr('style',"margin: 0px auto;text-align: center;");
+    $("#hw").attr('class',"web");
+     $("#hw").attr('height',"100%");
+      $("#hw").attr('width',"100%");
+ });
+ $('.Ipad-vertical').click(function(e){
+     e.preventDefault();
+   ///$("#bg").attr('src',"template_preview/images/ipad-landscape-big.png");
+     $("#device").attr('style',"margin: 1em auto;text-align: center;");
+      $("#hw").attr('class',"ipad-frame-land");
+    // $("#hw").attr('style',"position: absolute;   left: 7.3%; top: 55px;");
+     $("#hw").attr('height',"680");
+      $("#hw").attr('width',"1024");
+     
+ });
+$('.Ipad-hori').click(function(e){
+     e.preventDefault();
+   //$("#bg").attr('src',"template_preview/images/ipad-vertical-big.png");
+      $("#device").attr('style',"margin: 1em auto;text-align: center;");
+       //$("#hw").attr('style',"left:50px;top:135px");
+       $("#hw").attr('class',"ipad-frame-ver");
+      // $("#hw").attr('style',"    position: absolute; left: 7.3%; top: 75px;");
+     $("#hw").attr('height',"1024");
+      $("#hw").attr('width',"768");
+        
+ });
+ 
+ 
+ 
+ $('.Iphone-vertical').click(function(e){
+     e.preventDefault();
+   ///$("#bg").attr('src',"template_preview/images/ipad-landscape-big.png");
+     $("#device").attr('style',"margin: 1em auto;text-align: center;");
+      $("#hw").attr('class',"smart-frame-var");
+    // $("#hw").attr('style',"position: absolute;   left: 7.3%; top: 55px;");
+     $("#hw").attr('height',"320");
+      $("#hw").attr('width',"480");
+     
+ });
+$('.Iphone-hori').click(function(e){
+     e.preventDefault();
+   //$("#bg").attr('src',"template_preview/images/ipad-vertical-big.png");
+      $("#device").attr('style',"margin: 1em auto;text-align: center;");
+       //$("#hw").attr('style',"left:50px;top:135px");
+       $("#hw").attr('class',"smart-frame-land");
+      // $("#hw").attr('style',"    position: absolute; left: 7.3%; top: 75px;");
+     $("#hw").attr('height',"480");
+      $("#hw").attr('width',"320");
+      });
+ 
+ $('.mobile').click(function(e){
+     e.preventDefault();
+   //$("#bg").attr('src',"template_preview/images/ipad-vertical-big.png");
+      $("#device").attr('style',"margin: 1em auto;text-align: center;");
+       //$("#hw").attr('style',"left:50px;top:135px");
+       $("#hw").attr('class',"mobile-frame");
+      // $("#hw").attr('style',"    position: absolute; left: 7.3%; top: 75px;");
+     $("#hw").attr('height',"500");
+      $("#hw").attr('width',"240");
+        
+ });
+ 
+ 
+});
+  
+</script>
+    </head>
+
+    <body style="padding-bottom:3%">
+        <div id="wrap" style="margin-top: 0px; position: relative;">
+        <!-- Navbar -->
+            <div id="topBar">
+                <div class="wrap">
+                    <div class="logo"><a href="../p3/index.html">Previous Template 3</a></div>
+                    <div class="main-homepage"><a href="../../index.html">← Back to Main Page</a></div>
+                    <div class="right">
+                        <div class="devices">
+                            <ul>
+                                <li><a href="#" class="web"><img src="img/monitor.png"></a></li>
+                                <li><a href="#" class="Ipad-hori"><img src="img/ipad-icon.png"></a></li>
+                                <li><a href="#" class="Ipad-vertical"><img src="img/ipad-landscape.png"></a></li>
+                                <li><a href="#" class="Iphone-vertical"><img src="img/iphone-icon.png"></a></li>
+                                <li><a href="#" class="Iphone-hori"><img src="img/iphone-landscape.png"></a></li>
+                                <li><a href="#" class="mobile"><img src="img/nokia-icon.png"></a></li>
+                            </ul>  
+                        </div>
+                        <div class="go-back">
+                            <a href="../p2/index.html">Next Template 2</a>
+                        </div>
+                        <a id="close-button" title="Remove Frame" class="closeMe" href="home.html" target="_blank"><i class="fa fa-times"></i></a>
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div style="margin: 0px auto;text-align: center;" id="device">
+            <iframe id="hw" class="web" src="home.html" name="livePreviewFrame" noresize="noresize" style=" min-height: 100%;" frameborder="0" height="100%" width="100%">
+            </iframe>
+        </div>
+        <script>
+            var adjustFrame = function() {
+            var headerDimensions = $('#topBar').height();
+            $('#livePreviewFrame').height($(window).height() - headerDimensions);
+            }
+            $(document).ready(function() {
+            adjustFrame();
+            $('.closeMe').mouseover(function() {
+            $('.closeMe').addClass('active');
+            }).mouseout(function() {
+            $('.closeMe').removeClass('active');
+            });
+            });
+
+            $(window).resize(function() {
+            adjustFrame();
+            }).load(function() {
+            adjustFrame();
+            });
+        </script>
+        <script type="text/javascript">
+        // function to fix height of iframe!
+            var calcHeight = function() {
+            var headerDimensions = $('#headerlivedemo').height();
+            var selector = '#iframelive';
+               if($('#wrap').hasClass('closed')) {
+                   $(selector).height($(window).height());
+               } else {
+                   $(selector).height($(window).height() - headerDimensions);
+               }
+            }
+            $(document).ready(function() {
+            calcHeight();
+            });
+            $(window).resize(function() {
+            calcHeight();
+            }).load(function() {
+            calcHeight();
+            });
+        </script>
+
+
+
+
+
+
+        <script src="owl-carousel/owl.carousel.js"></script> 
+        <script src="js/plugins.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>  
+        <script src="js/main.js"></script>
+        
+
+
+
+
+
+    </body>
+</html>
+
+
