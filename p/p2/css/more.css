@@ -1,0 +1,116 @@
+
+
+ul{padding: 0}
+li{list-style: none;}
+
+
+
+
+
+body{
+	background: #818083;
+	color: #013005;
+}
+
+.img-top{
+	width: 100%;
+	margin: 0px auto;
+}
+
+
+
+
+.img-top{
+	color: #B8B9A1;
+}
+
+.img-top img{}
+
+.img-top h2{}
+
+.img-top h4{}
+
+.more-list strong{}
+
+.more-list li{
+	background: url(../img/arrow3.png) no-repeat 0% 55%;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.more-list li a{
+	cursor: default;
+	font-family: 'Iceland', cursive;
+	color: #ffc029;
+	font-weight: 900;
+	text-shadow: 0 0 1px #000;
+}
+
+.list-img{}
+
+.more-content h3{}
+
+.more-content p{}
+
+.more-content h4{
+	color: #1A2A02;
+}
+
+
+.styling-list li{
+	list-style: lower-roman;
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Iceland', cursive;
+}
+.styling-list {
+	padding: 30px 0 0 30px;
+}
+
+
+.btn-default{
+	border-radius: 0px;
+	background: rgb(197, 188, 25) none repeat scroll 0% 0%;
+	color: rgb(231, 51, 3);
+	border-color: rgb(197, 188, 25);
+	transition: 0.7s;
+}
+
+.btn-default:hover{
+	background: transparent;
+	border:1px solid #fff;
+	color: #fff;
+}
+
+
+
+.footer{
+	padding: 40px 0 20px 0;
+	background: #606060;
+	margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

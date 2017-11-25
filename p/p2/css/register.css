@@ -1,0 +1,161 @@
+
+
+
+ul{padding: 0}
+li{list-style: none;}
+
+
+
+body{
+	background-image: url(../img/w8.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #e0ffd9;
+	background-color: #939393;
+}
+
+.navbar-default {
+	z-index: 99;
+	background: transparent;
+	border: 0;
+}
+
+
+.menu-area{
+	position: relative;
+}
+
+
+
+
+
+
+.register-form{
+	width: 50%;
+	margin: 0 auto;
+}
+
+label{}
+
+.form-group{
+	margin-bottom: 35px;
+}
+
+.form-control{
+	background: transparent;
+	padding: 0px;
+	border-radius: 0;
+	color: #e0ffd9;
+	height: 45px;
+	font-size: 25px;
+}
+
+.btn-success{
+	width: 49%;
+	padding: 10px 0;
+	border-radius: 0;
+	background: transparent;
+	border-color: #fff;
+	font-size: 21px;
+	transition: 1s;
+	float: left;
+}
+
+.btn-success:hover, .btn-success:focus{
+	background: #f98400;
+	border-color: #f98400;
+}
+
+.form-control::-moz-placeholder{color:#fff;opacity:1;font-size: 16px;}.form-control:-ms-input-placeholder{color:#fff}.form-control::-webkit-input-placeholder{color:#000}
+
+
+.form-btn{
+	padding: 0;
+}
+
+.form-buton{
+	display: inline-block;
+	width: 100%;
+}
+
+
+.help-block {
+	color: #F55A5A;
+	text-shadow: 0 0 1px #000;
+}
+
+.connect-social-icon{
+	width: 100%;
+}
+
+.connect-text, .social-icon{
+	text-align: center;
+	margin: 0 auto;
+	padding: 5% 0 0;
+
+}
+
+
+.connect-text h3{
+	color: #fff;
+}
+.connect-text li{
+	font-size: 16px;
+	color: #fff;
+}
+.connect-text a{
+	color: #f98400;
+}
+
+.social-icon{}
+
+.social-icon li{
+	display: inline-block;
+	overflow: hidden;
+	width: 24px;
+	height: 24px;
+	margin-top: 0;
+	transition: 1s;
+}
+.icon-img1, .icon-img2, .icon-img3, .icon-img4, .icon-img5{
+	transition: .5s;
+}
+.social-icon li a{
+	display: block;
+}
+
+.social-icon li a img{}
+
+.social-icon li:hover .icon-img1, .social-icon li:hover .icon-img2, .social-icon li:hover .icon-img3, .social-icon li:hover .icon-img4, .social-icon li:hover .icon-img5 {margin-top: -24px;}
+
+
+.icon-img2{margin-left: -144px;}
+.icon-img3{margin-left: -24px;}
+.icon-img4{margin-left: -96px;}
+.icon-img5{margin-left: -120px;}
+
+
+.footer{
+	padding: 60px 0 30px 0; 
+}
+
+
+
+@media(max-width:767px){
+	.register-form {
+	width: 80%;
+	margin: 0 auto;}
+}
+
+
+@media(max-width:767px){
+	.navbar-brand{display: none;}
+	.navbar-toggle{float: none;margin-right: 0;}
+}
+
+@media(max-width:247px){
+.connect-text a {color: #f98400;font-size: 15px;}
+}
+
+

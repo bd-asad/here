@@ -1,0 +1,383 @@
+
+
+
+
+
+
+body{}
+ul{padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+
+.navbar-default {
+	position: absolute;
+	z-index: 99;
+	background: transparent;
+	border: 0;
+	left: 50%;
+	margin-left: -50%;
+	width: 100%
+}
+
+
+.navbar-default .navbar-nav > li > a{
+	color: #fff;
+}
+
+
+@media(min-width:767px) {
+.navbar {
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+    background: rgba(0, 0, 0, 0.26);
+    border-bottom: 1px solid rgba(93, 93, 93, 0.22);
+	}
+
+}
+
+@media(max-width:767px){
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+    background: #5f5f5f;
+    text-align: center;
+	}
+}
+    .top-nav-collapse {
+        padding: 0;
+    }
+
+.header{
+	background-image: url(../img/w7.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	position: relative;
+	background-size: cover;
+	padding: 15% 0;
+	color: #A2F919;
+	text-shadow: 0 0 1px #F00;
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+.project-another h2{
+	color: #74BD00;
+}
+
+.project-grid{
+	padding-bottom: 15px;
+}
+
+.project-grid a img.img-responsive::before{
+	content: "";
+	position: absolute;
+	background-image: url(../img/sr.png);
+	transform: scale(1);
+}
+
+.gal{
+	position: relative;
+	display: block;
+}
+
+.gal .src{
+content: "";
+background: url(../img/sr.png) -102px 0 no-repeat;
+display: block;
+position: absolute;
+background-position: center;
+transform: scale(0);
+transition: 1s;
+top: 40%;
+left: 45%;
+right: 45%;
+bottom: 40%;
+}
+
+.gal:hover .src{
+	transform: scale(1.5);
+}
+
+.service-content{}
+
+.service-content a:first-child{
+	color: #74BD00;
+	font-size: 18px;
+	margin: 2% 0 0;
+	display: block;
+	transition: 0.5s;
+}
+.service-content a:first-child:hover, .service-content a:first-child:focus{
+	color: #ffb400;
+	text-decoration: none;
+}
+.service-content p{}
+
+.service-content a span{
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.btn-default{
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+    transition: all 0.5s;
+    position: relative;
+	border: 0;
+	overflow: hidden;
+	background: #17b9ea;
+	display: inline-block;
+	width: 190px;
+	color: #fff;
+	font-size: 1em;
+	border-radius: 0px;
+	font-weight: normal;
+}
+
+
+.btn-default::before, .btn-default::after{
+	content: '';
+	position: absolute;
+	top: 50px;
+	left: -5px;
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 190px solid rgba(255,255,255,0.25);
+	z-index: 1;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.btn-default::after{
+	transition-delay: 0.2s;
+	-webkit-transition-delay:0.2s;
+}
+
+.btn-default:hover::before{
+	opacity: 1;
+	-webkit-transform: translate(0px,-190px);
+	-moz-transform: translate(0px,-190px);	
+	-o-transform: translate(0px,-190px);	
+	-ms-transform: translate(0px,-190px);	
+	transform: translate(0px,-190px);
+}
+
+.btn-default:hover::after{
+	opacity: 1;
+	-webkit-transform: translate(0px,-150px);
+	-moz-transform: translate(0px,-150px);	
+	-o-transform: translate(0px,-150px);	
+	-ms-transform: translate(0px,-150px);	
+	transform: translate(0px,-150px)
+}
+
+.btn-default:hover{
+	color: #fff;
+	background:#17b9ea;
+}
+
+
+.project-construction{
+	padding: 50px 0;
+	background: #efefef;
+}
+
+.project-construction h2{
+	color: #74BD00;
+	margin-bottom: 22px;
+	display: block;
+}
+
+.construction-img img{}
+
+.construction-img a{
+	font-size: 18px;
+	padding: 5px 0;
+	display: block;
+	transition: .5s;
+	color: #ffb400;
+}
+
+.construction-img a:hover{
+	text-decoration: none;
+	color: #74BD00;
+}
+
+.construction-img p{}
+
+.construction-list{
+	padding-left: 50px;
+}
+
+.production-list{}
+
+.construction-list h2{}
+
+.construction-list li{
+
+}
+
+.construction-list li i{
+	padding-right: 8px;
+}
+
+.construction-list li a{
+	font-size: 15px;
+	display: block;
+	padding: 6px 0;
+	transition: .3s;
+}
+
+.construction-list li a:hover{
+
+	color: #ffb400;
+	text-decoration: none;
+}
+
+
+
+.latest-tweest{
+	background-color: #333;
+	color: #fff;
+	padding: 30px 0;
+}
+
+.tweest1{}
+
+.tweest1 h1 span{
+	font-family: 'Iceland', cursive;
+	color: #ffb400;
+	font-size: 30px;
+}
+
+.tweest1 i{}
+
+.tweest1 p{}
+
+.tweest1 a{
+	font-size: 20px;
+	color: #ffb400;
+	margin-top: 15px;
+	display: block;
+}
+
+.tweest1 a i{}
+
+.tweet2{}
+
+.tweet2 h3{}
+
+.tweet-cmnt li{}
+
+.tweet-cmnt li i{}
+
+.fa-user{
+font-size: 33px;
+padding: 7px;
+border-radius: 100%;
+background: #74BD00;
+}
+
+.fa-smile-o{
+	color: #4d18de;
+	background: white;
+	border-radius: 100%;
+}
+
+.tweet-cmnt li p{}
+
+.tweet-cmnt li h5{}
+
+.tweet3{}
+
+.tweet3 h2{}
+
+.tweet3 .form-group{}
+
+.tweet3 .form-control{
+	border-radius: 0;
+	height: 43px;
+}
+
+.btn-success{
+	padding: 12px 15px;
+	border-radius: 0;
+	background: #b98a05;
+	font-size: 16px;
+	transition: 0.6s;
+	border-color: #fff;
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success:active{
+	background: transparent;
+	border-color: #b98a05;
+	outline: 0;
+}
+
+
+.footer-area{
+	background-color: #a7a7a7;
+	padding: 50px 0 30px;
+}
+
+.go-top{
+	position: absolute;
+	right: 0;
+}
+
+
+
+@media (max-width: 250px){
+.btn-default{width: 100px;}
+.btn-default::before, .btn-default::after{
+	border-bottom: 100px solid rgba(255,255,255,0.25);
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;}
+.btn-default:hover::before{transform: translate(0px,-100px);}
+.btn-default:hover::after{transform: translate(0px,-60px)}
+.gal .src{
+top: 35%;
+left: 35%;
+right: 45%;
+bottom: 40%;}
+
+}
+
+
+@media(max-width:247px){
+	.navbar-brand{display: none;}
+	.navbar-toggle{float: none;margin-right: 0;}
+	.project-construction h2 {font-size: 24px;}
+}
+
+
+@media(max-width:767px){
+	.construction-list{text-align: center;}
+}
+
+
+
+
+
+
+
+
+
+
+
