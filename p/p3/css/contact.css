@@ -1,0 +1,121 @@
+
+
+
+
+
+
+
+
+
+ul{
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+
+body{
+	background-image: url(../img/ba2.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-position: center;
+	padding: 0 0 30px 0;
+}
+
+
+
+
+.navbar-default .navbar-nav > li > a{
+	color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+	color: #67aa67;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #9DFF93;
+    background-color: transparent;
+    font-weight: 900;
+}
+
+
+.contact-area{
+	color: #fff;
+}
+
+.contact-info{
+	padding-top: 35px;
+}
+
+.contact-info p{
+	margin-bottom: 18px;
+}
+
+.form-control{
+	background: transparent;
+	border-radius: 0;
+	color: #fff;
+}
+
+.social-icons{
+	padding-top: 30px;}
+
+.social-icons li{
+	width: 56px;
+	height: 56px;
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 20%;
+	border: 3px solid rgb(74, 74, 74);
+	background: #000;
+	margin-right: 15px;
+	transition: 1s;
+}
+
+.social-icons li a{}
+
+.social-icons li a img{}
+
+.icon1, .icon2, .icon3, .icon4{
+	transition: 0.6s;
+}
+
+.icon1{
+	margin-top: -67px;
+	margin-left: -158px;
+}
+.icon2{
+	margin-top: -65px;
+	margin-left: -93px;
+}
+.icon3{
+	margin-top: -67px;
+	margin-left: -275px;
+}
+.icon4{
+	margin-top: -64px;
+	margin-left: -337px;
+	
+}
+.icon1:hover, .icon2:hover, .icon3:hover, .icon4:hover{
+	margin-top: -207px;
+}
+
+.icon1:active, .icon1:focus, .icon2:active, .icon2:focus, .icon3:active, .icon3:focus, .icon4:active, .icon4:focus{
+	margin-top: -275px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
